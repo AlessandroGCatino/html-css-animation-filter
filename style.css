@@ -4,11 +4,10 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
-
-    transition: background-color 3s;
 }
 
 .ex-1-square:hover{
+    transition: background-color 3s;
     background-color: red;    
 }
 
@@ -18,12 +17,10 @@
     width: 100px;
     height: 100px;
     background: red;
-
-    transition: width 1s;
-
 }
 
 .ex-2-square:active{
+    transition: width 1s;
     width: 600px;
 }
 
@@ -33,11 +30,10 @@
     width: 100px;
     height: 100px;
     background: red;
-
-    transition: border-radius 1s;
 }
 
 .ex-3-square:hover{
+    transition: border-radius 1s;
     border-radius: 50%;
 }
 
@@ -47,11 +43,10 @@
     width: 100px;
     height: 100px;
     background: red;
-
-    transition: background-color 1s;
 }
 
 .ex-4-square:hover{
+    transition: background-color 1s;
     background: transparent;
 }
 
@@ -62,8 +57,8 @@
     width: 60px;
     height: 60px;
     background: red;
-
     transition: width 1s, height 1s;
+
 }
 
 .ex-5-square:hover{
@@ -80,13 +75,28 @@
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: 2s;
+
 }
 
 /* esercizio 6 */
 
+.ex-6-img:hover{
+    filter: grayscale(100%)
+}
+
 /* esercizio 7 */
 
+.ex-7-img:hover{
+    filter: grayscale(100%) blur(2px);
+}
+
 /* esercizio 8 */
+
+.ex-8-img:hover{
+    filter: contrast(200%) blur(2px);
+    border-radius: 20%;
+}
 
 /* esercizio 9 */
 
@@ -95,16 +105,49 @@
     width: 400px;
 }
 
+.ex-9-img:hover{
+    transition: 2s;
+    border-radius: 20%;
+    transform: scale(1.5);
+    filter: contrast(150%) blur(1px);
+
+}
+
 /* esercizio 10 */
 
 .ex-10-icon {
     font-size: 60px;
+}
+.ex-10-icon:hover{
+    animation: infinite-turn 1s infinite linear;
+}
+
+@keyframes infinite-turn {
+    0% {
+        transform: rotate(360deg);
+    }
 }
 
 /* esercizio 11 */
 
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover{
+    animation: rapid-turn 2s infinite linear;
+}
+
+@keyframes rapid-turn {
+    0% {
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
 
 /* ---------- */
