@@ -184,5 +184,97 @@
 
 /* esercizio 12 */
 
+.ex-12-button:hover .ex-12-top-white{
+    animation: sposta-top 2s linear infinite;
+}
+
+@keyframes sposta-top {
+    0%{
+        left:10%;
+    }
+    50%{
+        left:60%;
+    }
+    100%{
+        left:10%;
+    }
+
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: sposta-bottom 2s linear infinite;
+}
+
+@keyframes sposta-bottom {
+    0%{
+        right:10%;
+    }
+    50%{
+        right:60%;
+    }
+    100%{
+        right:10%;
+    }
+
+}
+
 /* esercizio 13 */
 
+.ex-13-button:hover .ex-13-top-white {
+    animation: giro-top 2s linear infinite;
+}
+@keyframes giro-top {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    35% {
+        left: 100%;
+        top: -10px;
+    }
+    47% {
+        left: 100%;
+        top: 100%;
+    }
+    82% {
+        left: -15px;
+        top: 100%;
+    }
+    92% {
+        left: -15%;
+        top: -10px;
+    }
+    100%{
+        left: 10%;
+        top:-10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: giro-bottom 2s linear infinite;
+}
+@keyframes giro-bottom {
+    0% {
+        right: 10%;
+        bottom: -10px;
+    }
+    35% {
+        right: 100%;
+        bottom: -10px;
+    }
+    47% {
+        right: 100%;
+        bottom: 100%;
+    }
+    82% {
+        right: -15px;
+        bottom: 100%;
+    }
+    92% {
+        right: -15%;
+        bottom: -10px;
+    }
+    100%{
+        right: 10%;
+        bottom:-10px;
+    }
+}
